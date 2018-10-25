@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data class="OfferingHeaderItemBinding">
+
+        <import type="android.view.View" />
+
+        <variable
+            name="model"
+            type="com.yts.tsbible.viewmodel.OfferingHeaderViewModel" />
+    </data>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!--챠트뷰-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="2dp"
+                android:gravity="center"
+                android:text="@string/my_total_offering"
+                android:textColor="@color/white"
+                android:textSize="9sp" />
+
+            <TextView
+                setAmountText="@{model.mUser.offeringAmount}"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <com.github.mikephil.charting.charts.PieChart
+                setPieChartView="@{model.mData}"
+                setVisible="@{model.mChartVisible}"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginTop="16dp" />
+
+            <TextView
+                setChartVisibleText="@{model.mChartVisible}"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:foreground="?android:selectableItemBackgroundBorderless"
+                android:gravity="center"
+                android:onClick="@{()->model.changeChartVisible()}"
+                android:padding="16dp"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <!--검색-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:tint="@color/colorPrimary"
+                app:srcCompat="@drawable/ic_search_black_16dp" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="@string/search"
+                android:imeOptions="actionDone"
+                android:onTextChanged="@{(text, start, before, count)->model.search(text)}"
+                android:padding="8dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/ic_keyboard_arrow_down_color_primary_16dp"
+                android:drawableRight="@drawable/ic_keyboard_arrow_down_color_primary_16dp"
+                android:drawableTint="@color/colorPrimary"
+                android:padding="8dp"
+                android:text="@string/all"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</layout>

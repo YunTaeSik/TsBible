@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data class="OfferingItemBinding">
+
+        <import type="android.view.View" />
+
+        <import type="com.yts.tsbible.utills.DateFormat" />
+
+        <variable
+            name="model"
+            type="com.yts.tsbible.viewmodel.OfferingViewModel" />
+    </data>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:onLongClick="@{(v)->model.deleteOffering(v)}"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <TextView
+                setTimePattern="@{DateFormat.OFFERING_DATE_FORMAT}"
+                setTimeText="@{model.mOffering.date}"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textGrayColor"
+                android:textSize="13sp"
+                tools:text="2018.10.21" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_weight="1"
+                android:text="@{model.mOffering.name}"
+                android:textSize="15sp"
+                tools:text="주일헌금" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:orientation="vertical">
+
+                <TextView
+                    setMoneyText="@{model.mOffering.money}"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:visibility="@{model.mOffering.money==0? View.INVISIBLE:View.VISIBLE}"
+                    tools:text="+18,000 원" />
+
+                <TextView
+                    setAmountText="@{model.mOffering.amount}"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:textColor="@color/textGrayColor"
+                    android:textSize="12sp"
+                    android:visibility="@{model.mOffering.money==0? View.INVISIBLE:View.VISIBLE}"
+                    tools:text="18,000 원" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View style="@style/lineView" />
+    </LinearLayout>
+</layout>

@@ -1,0 +1,93 @@
+<resources>
+    <string name="test_device">"1AAF5C26F373E0C2E84FCD5A8FB409BF"</string>
+    <string name="ad_app_id">"ca-app-pub-9788292917303375~6757753034"</string>
+    <string name="banner_ad_id">"ca-app-pub-9788292917303375/6907046405"</string>
+    <string name="screen_ad_id">"ca-app-pub-9788292917303375/3179753762"</string>
+    <string name="reward_ad_id">"ca-app-pub-9788292917303375/3590817309"</string>
+
+    <string name="contact_email">"sky877kr@gmail.com"</string>
+
+    <string name="app_name">"Bible TS"</string>
+    <string name="bible">"Bible"</string>
+    <string name="home">"Home"</string>
+    <string name="setting">Setting</string>
+    <string name="search">Search</string>
+    <string name="chapter">"Chapter"</string>
+    <string name="sentence">"Sentence"</string>
+    <string name="size">"Size"</string>
+    <string name="highlighter">"Highlighter"</string>
+    <string name="bookmark">"Bookmark"</string>
+    <string name="image">"Image"</string>
+    <string name="background">"Background"</string>
+    <string name="edit">"Edit"</string>
+    <string name="cancel">"Cancel"</string>
+    <string name="save">"Save"</string>
+    <string name="share">"Share"</string>
+    <string name="move">"Move"</string>
+    <string name="view">"View"</string>
+    <string name="offering">"Offering"</string>
+    <string name="all">"All"</string>
+    <string name="basics">"Basics"</string>
+    <string name="date">"Date"</string>
+    <string name="kind">"Kind"</string>
+    <string name="price">"Price"</string>
+    <string name="delete">"Delete"</string>
+    <string name="goal">"Goal"</string>
+    <string name="minute">"Minute"</string>
+
+    <string name="offering_management">"Offering management"</string>
+    <string name="make_image">"Make Image"</string>
+    <string name="letter_size">"Letter Size"</string>
+    <string name="edit_image">"Edit Image"</string>
+    <string name="easy_viewing_mode">"Easy viewing mode"</string>
+    <string name="add_offering">"Add Offering"</string>
+    <string name="expand_chart">"Expand Chart"</string>
+    <string name="collapse_chart">"Collapse Chart"</string>
+    <string name="goal_setting">"Goal Setting"</string>
+    <string name="contact_us">"Contact us"</string>
+    <string name="add_review">"Add Review"</string>
+    <string name="version_information">"Version Information"</string>
+
+    <string name="verse_of_the_day">"Verse of the day"</string>
+    <string name="my_total_offering">"My total offering"</string>
+    <string name="a_monetary_unit">"$"</string>
+    <string name="amount_of_offering">"Amount of offering"</string>
+
+    <string name="total_success_number">"(Total number of successes : %time)"</string>
+    <string name="read_the_bible_day">"Read the Bible %s minutes a day"</string>
+
+    <!--message-->
+    <string name="message_image_save_finish">"Image saved."</string>
+    <string name="message_image_share">"Do you want to share the image you created?"</string>
+    <string name="message_move_bible_list">"Move to Bible?"</string>
+    <string name="message_move_image_make">"Would you like to make Verse of the day an image?"</string>
+    <string name="message_delete_offering">"Are you sure you want to delete your offering history?"</string>
+    <string name="message_offering_manager">"We will manage your valuable offerings."</string>
+    <string name="message_goal_setting">"Please set a Bible reading goal."</string>
+    <string name="message_goal_success">"Congratulations. You achieved your goal today."</string>
+    <string name="message_goal_edit_setting">"Set up a few minutes of reading the Bible a day."</string>
+
+
+    <!--title-->
+    <string name="title_image_save">"You created a verse image for %s"</string>
+    <string name="title_highlighter_save">"You highlighted %s"</string>
+    <string name="title_bookmark_save">"You Bookmarked %s"</string>
+
+    <!--guide-->
+    <string name="msg_contact">"Send an email to the developer."</string>
+    <string name="msg_review">"Review the app."</string>
+
+
+    <!--hint-->
+    <string name="hint_date">"Please select a date."</string>
+    <string name="hint_offering_price"><font size="15">"Enter the amount and it will appear in contribution statistics.."</font></string>
+
+    <!--error-->
+    <string name="error_offering_kind">"Please select the type of offering."</string>
+    <string name="error_email">"There are no email applications installed."</string>
+
+
+    <string name="shared_title">Invite</string>
+    <string name="shared_message">I recommend App to you :)</string>
+    <string name="shared_call_to_action_text">Install!</string>
+</resources>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background">#EDF0F2</color>
+    <color name="cardBackground">#FEFEFE</color>
+
+    <color name="colorPrimary">#344955</color>
+    <color name="colorPrimaryDark">#232f34</color>
+    <color name="colorPrimaryLight">#4a6572</color>
+    <color name="colorAccent">#f9aa33</color>
+
+    <color name="itemColor">#f9aa33</color>
+
+    <color name="white">#ffffff</color>
+
+    <color name="line">#eeeeee</color>
+    <color name="black_transparent">#44000000</color>
+    <color name="transparent">#00000000</color>
+
+
+    <color name="tintColor">#17262A</color>
+    <color name="tintWhiteColor">#B4C1CC</color>
+
+    <color name="textColor">#17262A</color>
+    <color name="textGrayColor">#8b8e8f</color>
+    <color name="textWhiteColor">#E8EBED</color>
+    <color name="textColorHint">#B3B3B9</color>
+
+    <color name="blueLight">#09fffc00</color>
+    <color name="highLight">#FFCC33</color>
+</resources>

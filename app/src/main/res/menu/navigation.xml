@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <item
+        android:id="@+id/app_bar_bible"
+        android:icon="@drawable/ic_import_contacts_white_24dp"
+        android:title="@string/bible"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/app_bar_home"
+        android:icon="@drawable/ic_home_white_24dp"
+        android:title="@string/home"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/app_bar_settings"
+        android:icon="@drawable/ic_settings_white_24dp"
+        android:title="@string/setting"
+        app:showAsAction="always" />
+</menu>
